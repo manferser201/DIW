@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="description" content="Ejemplo Básico Aplicación Web">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Esqueleto Básico Aplicación Web</title>
+    <title>Imperial Event </title>
     <!-- La mayoria de los navegadores reconocen el archivo favicon.ico o favicon.png si están en la raiz del proyecto -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -16,17 +16,105 @@
   </head>
 
   <body>
-    <!--[if IE]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <div class="container">
-      <h1>Esqueleto Básico Aplicación Web</h1>
-      <p>Bienvenido al Módulo de Desarrollo Entorno Web Cliente</p>
-      <ul>
-        <li>Ciclo Formativo en Desarrollo de Aplicaciones Web</li>
-      </ul>
-      <p>Proyecto DEMO</p>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/app/assets/images/logo_cabecera.svg" alt="Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Usuarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pedidos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Registro</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </div>
+    
+      <div class="row">
+        <div class="col-8">
+          <article id="article1">
+            <section>
+                <img src="images/imagen_articulo1.jpg" alt="foto Articulo 1" style="height: 50%;">
+            </section>
+            <section>
+                <h1>Articulo 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum harum eum quod! Sint distinctio id veniam maiores, deleniti officia consequatur porro reiciendis quaerat ad sunt corrupti recusandae excepturi odio exercitationem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, cum sunt, molestias, ad odio asperiores vel consequatur nisi hic quibusdam suscipit maxime quod officiis quo quisquam illo dignissimos. Odio, amet!</p>
+                <h3><a href="">Leer mas...</a></h3>
+            </section>
+        </article>
+  
+        <article id="article2">
+            <section>
+                <img src="images/imagen_articulo2.jpg" alt="foto Articulo 2">
+            </section>
+            <section>
+                <h1>Articulo 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum harum eum quod! Sint distinctio id veniam maiores, deleniti officia consequatur porro reiciendis quaerat ad sunt corrupti recusandae excepturi odio exercitationem.</p>
+                <h3><a href="">Leer mas...</a></h3>
+            </section>   
+        </article>
+  
+        <article id="article3">
+            <section>
+                <img src="images/imagen_articulo3.jpg" alt="foto Articulo 3">
+            </section>
+            <section>
+                <h1>Articulo 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum harum eum quod! Sint distinctio id veniam maiores, deleniti officia consequatur porro reiciendis quaerat ad sunt corrupti recusandae excepturi odio exercitationem.</p>
+                <h3><a href="">Leer mas...</a></h3>
+            </section>
+        </article>
+        </div>
+  
+        <div class="col-4">
+          
+          <h2>Noticias que te podrían interesar</h2>
+                  
+                  <div id="aside">
+                      <aside>
+                          <img src="images/banner.png" alt="Banner">
+                      </aside>
+          
+                      <hr>
+  
+                      <aside>
+                          <img src="images/imagen_articulo_extra2.jfif" alt="Foto noticia">
+                          <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h3>
+                      </aside>
+                  </div>
+        </div>
+      </div>
+      
+    
 
     <!-- JavaScript -->
     <!-- Primero jQuery, después Bootstrap JS -->
